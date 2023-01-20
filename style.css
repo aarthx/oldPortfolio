@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+
+body {
+  background-image: radial-gradient(circle, #122c34, #0e3442, #0d3b51, #144261, #224870);
+  font-family: 'Kanit', sans-serif;
+}
+
+.container {
+  background: #F7F7F7;
+  margin: 64px;
+  border-radius: 20px;
+  box-shadow: 6px 6px 6px #0E1D2F;
+  color: #1C1C1C;
+  padding: 64px;
+}
+
+.dark .nav-box {
+  background: #212529;
+  border-radius: 8px;
+  border-style: none none solid none;
+  border-color: white;
+  width: 100%;
+  height: 8vh;
+  border-width: 2px;
+  margin: 0 0 2vw 0;
+}
+
+.nav-box{
+  background: #212529;
+  border-radius: 8px;
+  border-style: none none solid none;
+  border-color: #2196F3;
+  width: 100%;
+  height: 8vh;
+  border-width: 2px;
+  margin: 0 0 2vw 0;
+}
+
+.nav {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.logo {
+  border-radius: 6px;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+
+}
+
+.nav a {
+  font-size: 1.5vw;
+  color: white;
+  padding: 0.7vw;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.nav a:hover {
+  background-color: #3f3f3f;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+}
+
+.perfil {
+  display: flex;
+}
+
+.perfil-foto {
+  border-radius: 460px;
+  max-height: 200px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.titulo {
+  margin-left: 16px;
+}
+
+.titulo h1 {
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 0px;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black; }
+}
+
+@keyframes blink-caret-dark {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
+}
+
+.titulo h3 {
+  font-weight: 400;
+  font-size: 24px;
+  
+  /*animação de escrita*/
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto 30px 0; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+.titulo img {
+  width: 50px;
+  margin-right: 20px;
+}
+
+.tema button {
+  align-self: flex-end;
+  font-size: 24px;
+  font-weight: 400;
+  padding: 8px 16px;
+  background: #ECF4FF;
+  border-radius: 100px;
+  border: 2px solid #0E1D2F;
+}
+
+.tema button:hover {
+  background: #d3dbe6;
+  cursor: pointer;
+}
+
+.projetos {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(230.65deg, #499CFE 27.49%, #9CC8FC 83.19%);
+  margin-top: 32px;
+  padding: 32px;
+  box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.42);
+  border-radius: 20px;
+}
+
+.projetos h1 {
+    display: flex;
+    align-items : center;
+}
+
+.projetos-titulo {
+  list-style: none;
+  font-weight: 700;
+  font-size: 36px; 
+}
+
+.projetos-item {
+  list-style-type: none;
+  font-size: 24px;
+  line-height: 48px;
+  font-weight: 400;
+}
+
+.projetos-item a {
+  color: #1C1C1C;
+  text-decoration: none;
+}
+
+.dark {
+  background: linear-gradient(236.85deg, #375B86 27.26%, #6B87A9 96.03%);
+}
+
+.dark .container {
+  background: #333439;
+  color: #F6F6F6;
+}
+
+.dark .projetos {
+  background-image: linear-gradient(to top, #264653, #225b68, #1c7079, #1b8786, #2a9d8f);
+  color: #1C1C1C;
+}
+
+.dark .tema button{
+  background: #1C1C1C;
+  color: #F6F6F6;
+  border: 2px solid #F7F7F7;
+}
+
+.dark .tema button:hover {
+  background: #3d3d3d;
+}
+
+.dark .titulo img {
+  filter: invert(1);
+}
+
+.dark .titulo h3 {
+  animation:  
+    typing 3.5s steps(40, end),
+    blink-caret-dark .75s step-end infinite;
+}
+
+.nlw-rocketseat1, .simple-js-ideas {
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.nlw-container, .app-ideas-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.app-ideas-container img {
+    border-radius: 20px;
+}
+
+.nlw-container img, .app-ideas-container img {
+    border: 5px solid #000000;
+    width: 40em;
+    height: 20em;
+}
+
+.nlw-container img:hover, .app-ideas-container img:hover {
+    filter: opacity(0.7);
+}
+
+.nlw-container p, .app-ideas-container p {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+/* Button Show/hide Divs */
+.button-toggle {
+    border: solid 2px white;
+    border-radius: 0.25rem;
+    background: #000000;
+    color: white;
+    font-size: 0.7em;
+    height: 4vh;
+    width: 2vw;
+    line-height: 36px;
+    font-weight: 700;
+    white-space: nowrap;
+    text-decoration: none;
+    padding: auto;
+    margin: 0.25rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.button-toggle:hover {
+    border: 2px solid black;
+    color: black;
+    background: #cccccc;
+    border-radius: 0.25rem;
+}
+
+.button-toggle:before {
+  content: '+';
+}
+
+.button-toggle:active {
+  content: '-';
+}
+
+
+
+
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background-color: rgb(0, 0, 0);
+  border: white outset;
+  border-width: 2px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.projetos, .sobre-mim, .sobre-artigos, .sobre-contatos {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(230.65deg, #499CFE 27.49%, #9CC8FC 83.19%);
+  margin-top: 32px;
+  padding: 32px;
+  box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.42);
+  border-radius: 20px;
+  animation: fromBottom 1s backwards;
+}
+
+.sobre-mim {
+  text-align: center;
+}
+
+.dark .projetos, .dark .sobre-mim,.dark .sobre-artigos,.dark .sobre-contatos {
+  background-image: linear-gradient(to top, #264653, #225b68, #1c7079, #1b8786, #2a9d8f);
+  color: #1C1C1C;
+}
+
+.tecnologias {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tecnologias img {
+  width: 5em;
+}
+
+.sobre-mim-texto {
+  margin-bottom: 5vh;
+  font-size: 1.5em;
+} 
+
+.sobre-contatos h1 {
+  margin-bottom: 2vh;
+}
+
+.contatos-lista {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.5em;
+}
+
+.contatos-lista a {
+  margin-right: 1vw;
+}
+
+.contatos-lista img {
+  width: 5vw;
+}
+
+.contatos-lista h3 {
+  align-items: center;
+}
+
+.contato-item {
+  display: flex;
+  align-items: center;
+}
