@@ -45,6 +45,11 @@ body {
   justify-content: space-evenly;
 }
 
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
 .logo {
   border-radius: 6px;
   border-style: solid;
@@ -154,6 +159,7 @@ body {
 .projetos h1 {
     display: flex;
     align-items : center;
+    gap: 50px;
 }
 
 .projetos-titulo {
@@ -247,8 +253,8 @@ body {
     background: #000000;
     color: white;
     font-size: 0.7em;
-    height: 4vh;
-    width: 2vw;
+    height: 100%;
+    width: 40px;
     line-height: 36px;
     font-weight: 700;
     white-space: nowrap;
@@ -257,6 +263,9 @@ body {
     margin: 0.25rem;
     cursor: pointer;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .button-toggle:hover {
@@ -265,17 +274,6 @@ body {
     background: #cccccc;
     border-radius: 0.25rem;
 }
-
-.button-toggle:before {
-  content: '+';
-}
-
-.button-toggle:active {
-  content: '-';
-}
-
-
-
 
 
 /* The switch - the box around the slider */
@@ -403,4 +401,56 @@ input:checked + .slider:before {
 .contato-item {
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 1000px) {
+  .nav,#navegacao .nav-box, #navegacao {
+    height: auto;
+  }
+  .nav {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-links a {
+    margin: 20px 0;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 25px;
+    font-size: 2rem;
+  }
+  .projetos h1 {
+    font-size: 2.5rem;
+  }
+  .nlw-container p, .app-ideas-container p {
+    font-size: 2rem;
+  }
+  .button-toggle {
+    padding: 50px;
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .nav-links a {
+    font-size: 2rem;
+  }
+  .cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+  }
+  .perfil {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+  }
 }
